@@ -10,6 +10,7 @@ namespace SimpleDI
     {
         static void Main(string[] args)
         {
+            //adding comment in the branch
             String loggerType = "text";
             ILogger logger;
             switch (loggerType)
