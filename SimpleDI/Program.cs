@@ -10,6 +10,7 @@ namespace SimpleDI
     {
         static void Main(string[] args)
         {
+            //adding comment
             String loggerType = "database";
             ILogger logger;
             switch (loggerType)
