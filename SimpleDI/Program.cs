@@ -20,6 +20,7 @@ namespace SimpleDI
                     break;
                 case "es":
                     logger = new ESLogger();
+                    //Branch2 comment
                     break;
                 default:
                     logger = new TextLogger();
