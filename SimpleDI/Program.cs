@@ -18,7 +18,9 @@ namespace SimpleDI
                 case "database":
                     logger = new DatabaseLogger();
                     break;
-
+                case "es":
+                    logger = new ESLogger();
+                    break;
                 default:
                     logger = new TextLogger();
                     break;
@@ -67,6 +69,13 @@ namespace SimpleDI
         }
     }
 
+    class ESLogger : ILogger
+    {
+        public void Log(String message)
+        {
+            Console.WriteLine("Logged to ES file: " + message);
+        }
+    }
     class DatabaseLogger : ILogger
     {
         public void Log(String message)
